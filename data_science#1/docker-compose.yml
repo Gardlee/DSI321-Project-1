@@ -34,14 +34,14 @@ services:
       - postgres
     working_dir: /app
   
-  mlflow:
-    build: ./mlflow/
-    ports:
-      - "5000:5000"
-    volumes:
-      - ./mlflow:/mlflow
-    depends_on:
-      - postgres
+  # mlflow:
+  #   build: ./mlflow/
+  #   ports:
+  #     - "5000:5000"
+  #   volumes:
+  #     - ./mlflow:/mlflow
+  #   depends_on:
+  #     - postgres
 
 volumes:
   postgres_data:
